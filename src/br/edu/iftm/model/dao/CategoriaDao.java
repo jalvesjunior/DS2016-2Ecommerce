@@ -38,8 +38,8 @@ public class CategoriaDao implements ICategoriaDao {
 	 */
 	@Override
 	@Transactional
-	public void excluir(Categoria categoria) {
-		Categoria merge = entityManager.merge(categoria);
+	public void excluir(Integer id) {
+		Categoria merge = entityManager.merge(new Categoria(id));
 		entityManager.remove(merge);
 	}
 

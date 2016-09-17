@@ -31,8 +31,8 @@ public class CategoriaService implements ICategoriaService {
 	
 	@Override
 	@WebMethod
-	public void excluir(@WebParam(name="categoria") Categoria categoria) {
-		categoriaDao.excluir(categoria);
+	public void excluir(@WebParam(name="idCategoria") Integer codigo) {
+		categoriaDao.excluir(codigo);
 	}
 	
 	@Override

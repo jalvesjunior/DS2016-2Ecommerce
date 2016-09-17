@@ -39,8 +39,9 @@ public class CategoriaService implements ICategoriaService {
 
 	@Override
 	@DELETE
-	public void excluir(Categoria categoria) {
-		categoriaDao.excluir(categoria);
+	@Path("/{codigo}")
+	public void excluir(@PathParam("codigo") Integer codigo) {
+		categoriaDao.excluir(codigo);
 	}
 
 	@Override

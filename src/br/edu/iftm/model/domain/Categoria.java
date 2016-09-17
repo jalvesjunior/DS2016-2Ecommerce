@@ -26,6 +26,10 @@ public class Categoria implements Serializable {
 	public Categoria() {
 		super();
 	}
+	
+	public Categoria(Integer id) {
+		this.codigo = id;
+	}
 
 	public Integer getCodigo() {
 		return codigo;
