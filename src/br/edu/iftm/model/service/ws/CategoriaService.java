@@ -41,4 +41,10 @@ public class CategoriaService implements ICategoriaService {
 		return categoriaDao.buscar(categoria);
 	}
 
+	@Override
+	@WebMethod
+	public Categoria buscarPorId(@WebParam(name="idCategoria") Integer codigo) {
+		return categoriaDao.buscarPorId(codigo);
+	}
+
 }

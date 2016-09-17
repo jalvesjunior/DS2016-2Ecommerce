@@ -13,5 +13,7 @@ public interface ICategoriaService {
 	void excluir(Categoria categoria);
 
 	List<Categoria> buscar(Categoria categoria);
+	
+	public Categoria buscarPorId(Integer codigo);
 
 }

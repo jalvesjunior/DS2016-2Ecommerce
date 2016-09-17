@@ -14,4 +14,6 @@ public interface ICategoriaDao {
 
 	List<Categoria> buscar(Categoria categoria);
 
+	Categoria buscarPorId(Integer id);
+
 }
